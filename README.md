@@ -1,2 +1,2 @@
 # Pac-Mati
-Imitacíon del juego pacman
+Imitación del juego pacman con sfml
