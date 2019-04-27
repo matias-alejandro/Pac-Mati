@@ -11,6 +11,9 @@
 #ifndef MAPA_HPP
 #define MAPA_HPP
 
+#include <SFML/Graphics.hpp>
+#include "../funciones.hpp"
+
 class Mapa
 {
 	public:
@@ -35,5 +38,6 @@ class Mapa
 
 		void EstablecerPosicion(int X, int Y, Nodo &Casillero);
 		void Inicializar(Nodo &Casillero);
+		VectorPosicion CalcularPosicion(int X, int Y);
 };
 #endif

@@ -11,6 +11,10 @@
 #ifndef JUGADORES_HPP
 #define JUGADORES_HPP
 
+#include <SFML/Graphics.hpp>
+#include "../funciones.hpp"
+#include "mapa.hpp"
+
 class Jugador : public sf::Sprite
 {
 	public:

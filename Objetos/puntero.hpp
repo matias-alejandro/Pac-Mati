@@ -11,6 +11,10 @@
 #ifndef PUNTERO_HPP
 #define PUNTERO_HPP
 
+#include <SFML/Graphics.hpp>
+#include "../funciones.hpp"
+#include "mapa.hpp"
+
 class Puntero : public sf::Sprite
 {
 	public:

@@ -13,7 +13,8 @@ Menu::Menu()
 {
 	if(!this->fuente.loadFromFile("Fuentes/PAC-FONT.ttf"))
 	{
-			std::cout << "[ERROR] No se encontró la this->fuente" << std::endl;
+//			std::cout << "[ERROR] No se encontró la this->fuente" << std::endl;
+		return;
 	}
 }
 /*********************************************************************/

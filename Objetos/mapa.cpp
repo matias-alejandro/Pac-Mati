@@ -51,7 +51,7 @@ void Mapa::Cargar(/*int NumMap*/)
 
 	if (Archivo==NULL)
 	{
-		std::cout << "[ERROR] Mapa no encontrado" << std::endl;
+		//std::cout << "[ERROR] Mapa no encontrado" << std::endl;
 		return;
 	}
 
@@ -100,7 +100,7 @@ void Mapa::teclado(sf::Event &evento)
 	if(evento.key.code == sf::Keyboard::G)
 	{
 		this->Guardar();
-		std::cout << "[AVISO] Mapa guardado"<< std::endl;
+		//std::cout << "[AVISO] Mapa guardado"<< std::endl;
 	}
 }
 /*********************************************************************/
@@ -113,7 +113,7 @@ void Mapa::EstablecerSprite(Nodo &Casillero)
 /*********************************************************************/
 void Mapa::EstablecerPosicion(int X, int Y, Nodo &Casillero)
 {
-	VectorPosicion Pos = CalcularPosicion(X, Y);
+	VectorPosicion Pos = this->CalcularPosicion(X, Y);
 	Casillero.SpriteCasillero.setPosition(Pos.x, Pos.y);
 }
 /*********************************************************************/
@@ -212,5 +212,13 @@ Nodo *Mapa::CrearCasillero(int X, int Y)
 	this->EstablecerSprite(*Nuevo);
 	this->EstablecerPosicion(X, Y, *Nuevo);
 	return Nuevo;
+}
+/*********************************************************************/
+VectorPosicion Mapa::CalcularPosicion(int X, int Y)
+{
+	VectorPosicion Var;
+	Var.x=X*13; //13 es el ancho del casillero
+	Var.y=Y*13; //13 es el alto del casillero
+	return Var;
 }
 /*********************************************************************/

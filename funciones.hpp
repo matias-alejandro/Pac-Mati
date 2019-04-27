@@ -1,3 +1,14 @@
+#ifndef FUNCIONES_HPP
+#define FUNCIONES_HPP
+
+/*********************************************************************/
+#define Alto_Pantalla 13*28 //Multiplo de 13
+#define Ancho_Pantalla 13*28//793 //Multiplo de 13
+
+#define VelocidadJugador 1.0
+#define CantDeSprites 11-1   //TEMPORAL, DESPUES BORRAR
+#define DefTamSprite 13
+#define DefVidasInit 3
 /*********************************************************************/
 enum
 {
@@ -18,14 +29,6 @@ struct VectorPosicion
 {
 	int x,y;
 };
-
-VectorPosicion CalcularPosicion(int X, int Y)
-{
-	VectorPosicion Var;
-	Var.x=X*13; //13 es el ancho del casillero
-	Var.y=Y*13; //13 es el alto del casillero
-	return Var;
-}
 /*********************************************************************/
 struct Nodo
 {		
@@ -39,3 +42,9 @@ struct Nodo
 	VectorPosicion PosicionReal;
 };
 /*********************************************************************/
+/*void mostrarError(char error[100])
+{
+	std::cout << "[ERROR] "<< error << std::endl;
+}*/
+/*********************************************************************/
+#endif

@@ -11,6 +11,13 @@
 #ifndef JUEGO_HPP
 #define JUEGO_HPP
 
+#include <SFML/Graphics.hpp>
+#include "../funciones.hpp"
+#include "menu.hpp"
+#include "mapa.hpp"
+#include "pacman.hpp"
+#include "puntero.hpp"
+
 class Juego
 {
 	public:
