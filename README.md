@@ -3,7 +3,7 @@ Imitación del juego pacman con sfml
 
 Dependencias
 ------------
-El primer paso es instalar la biblioteca [SFML][]. Existen [instrucciones oficiales][sfml-install] sobre como instalarlo.
+The first step is to install the [SFML][sfml] library itself. There are detailed [official instructions][sfml-install] on how to install it manually, however, on many systems there are easier ways.
 
 Instalar
 --------
@@ -11,3 +11,6 @@ Instalar
 cd Pac-Mati
 make install
 ```
+
+[sfml]: http://www.sfml-dev.org/ "Simple and Fast Multimedia Library"
+[sfml-install]: http://www.sfml-dev.org/tutorials/
