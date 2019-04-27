@@ -3,7 +3,7 @@ Imitación del juego pacman con sfml
 
 Dependencias
 ------------
-The first step is to install the [SFML][sfml] library itself. There are detailed [official instructions][sfml-install] on how to install it manually, however, on many systems there are easier ways.
+Es necesario instalar la librería [SFML][sfml]. Puede guiarse con las [instrucciones oficiales][sfml-install].
 
 Instalar
 --------
